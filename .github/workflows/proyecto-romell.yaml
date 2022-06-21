@@ -14,4 +14,12 @@ jobs:
           node-version: 16.3.0
       - name: Verificar Version Node
         run: node -v
+      - name: Instalacion de Dependencias
+        run: npm run install
+      - name: Pruebas Lint
+        run: npm run lint
+      - name: Pruebas Unitarias
+        run: npm run test
+      - name: Scaneo SonarQube
+        run: npm run sonar
 
