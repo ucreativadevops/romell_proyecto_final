@@ -24,4 +24,6 @@ jobs:
         run: npm run test
       - name: Scaneo SonarQube
         run: npm run sonar
+      - name: Build de Aplicacion
+        run: npm run build
 
