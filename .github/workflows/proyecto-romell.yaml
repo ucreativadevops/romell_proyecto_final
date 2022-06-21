@@ -26,4 +26,9 @@ jobs:
         run: npm run sonar
       - name: Build de Aplicacion
         run: npm run build
+      - name: Subir archivos a GitHub
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist-files
+          path: dist
 
