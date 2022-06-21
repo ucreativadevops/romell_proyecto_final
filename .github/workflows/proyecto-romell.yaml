@@ -33,6 +33,7 @@ jobs:
           path: dist
   fase-cd:
     runs-on: romell-vm
+    needs: fase-ci
     steps:
       - name: Descargar el artifact dist
         uses: actions/download-artifact@v3
