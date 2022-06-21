@@ -15,7 +15,7 @@ jobs:
       - name: Verificar Version Node
         run: node -v
       - name: Instalacion de Dependencias
-        run: npm run install
+        run: npm install
       - name: Pruebas Lint
         run: npm run lint
       - name: Pruebas Unitarias
