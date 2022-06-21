@@ -16,8 +16,8 @@ jobs:
         run: node -v
       - name: Instalacion de Dependencias
         run: npm install
-      - name: Pruebas Lint
-        run: npm run lint
+#       - name: Pruebas Lint
+#         run: npm run lint
       - name: Pruebas Unitarias
         run: npm run test
       - name: Scaneo SonarQube
