@@ -31,4 +31,15 @@ jobs:
         with:
           name: dist-files
           path: dist
+  fase-cd:
+    runs-on: romell-vm
+    steps:
+      - name: Descargar el artifact dist
+        uses: actions/download-artifact@v3
+        with:
+          name: dist-files
+      - name: Enlistar archivos
+        run: ls
+
+
 
