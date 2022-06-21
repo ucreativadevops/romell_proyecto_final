@@ -42,7 +42,7 @@ jobs:
       - name: Enlistar archivos
         run: ls
       - name: Deploy de Aplicacion
-        run: cp clase6/* /var/www/romell
+        run: cp clase6/* /var/www/romell/
 
 
 
